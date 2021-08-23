@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class PersonDataServiceService {
-  basurl: string = 'https://rest-api-spring-boot.azurewebsites.net';
+  basurl: string = 'http://localhost:8080';
   constructor(private http: HttpClient) {}
 
   getUsers(): Observable<Person[]> {
